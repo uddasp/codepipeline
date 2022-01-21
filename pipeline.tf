@@ -75,7 +75,7 @@ resource "aws_codepipeline" "cicd_pipeline" {
             configuration = {
                 FullRepositoryId = "uddasp/codepipeline"
                 BranchName   = "master"
-                ConnectionArn = var.codestar_connector_credentials
+                ConnectionArn = var.codestart_connector_credentials
                 OutputArtifactFormat = "CODE_ZIP"
             }
         }
